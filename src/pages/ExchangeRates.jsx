@@ -62,13 +62,13 @@ const ExchangeRates = () => {
                 CAD
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.CAD * rate * 102) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.CAD * rate * 102) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.CAD * rate).toFixed(4)}
+                {exchangeRates && (exchangeRates.CAD * rate).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.CAD * rate * 98) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.CAD * rate * 98) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -76,13 +76,13 @@ const ExchangeRates = () => {
                 IDR
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.IDR * rate * 102) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.IDR * rate * 102) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.IDR * rate).toFixed(4)}
+                {exchangeRates && (exchangeRates.IDR * rate).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.IDR * rate * 98) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.IDR * rate * 98) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -90,13 +90,13 @@ const ExchangeRates = () => {
                 JPY
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.JPY * rate * 102) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.JPY * rate * 102) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.JPY * rate).toFixed(4)}
+                {exchangeRates && (exchangeRates.JPY * rate).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.JPY * rate * 98) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.JPY * rate * 98) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -104,13 +104,13 @@ const ExchangeRates = () => {
                 CHF
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.CHF * rate * 102) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.CHF * rate * 102) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.CHF * rate).toFixed(4)}
+                {exchangeRates && (exchangeRates.CHF * rate).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.CHF * rate * 98) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.CHF * rate * 98) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -118,13 +118,13 @@ const ExchangeRates = () => {
                 EUR
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.EUR * rate * 102) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.EUR * rate * 102) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.EUR * rate).toFixed(4)}
+                {exchangeRates && (exchangeRates.EUR * rate).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.EUR * rate * 98) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.EUR * rate * 98) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -132,13 +132,13 @@ const ExchangeRates = () => {
                 USD
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.USD * rate * 102) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.USD * rate * 102) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.USD * rate).toFixed(4)}
+                {exchangeRates && (exchangeRates.USD * rate).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && ((exchangeRates.USD * rate * 98) / 100).toFixed(4)}
+                {exchangeRates && ((exchangeRates.USD * rate * 98) / 100).toFixed(4).toString().padStart(8, '0')}
               </Table.Td>
             </Table.Tr>
           </Table.Tbody>
