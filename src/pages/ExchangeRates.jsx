@@ -5,6 +5,8 @@ import Table from '../components/atoms/Table';
 import Layout from '../components/templates/Layout';
 import { fetchData } from '../redux/actions';
 
+const rate = 18159.1691;
+
 const ExchangeRates = () => {
   const [exchangeRates, setExchangeRates] = useState([]);
   const { data, loading, error } = useSelector((state) => ({
@@ -60,13 +62,13 @@ const ExchangeRates = () => {
                 CAD
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.CAD * 102) / 100}
+                {exchangeRates && (exchangeRates.CAD * rate * 102) / 100}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && exchangeRates.CAD}
+                {exchangeRates && exchangeRates.CAD * rate}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.CAD * 98) / 100}
+                {exchangeRates && (exchangeRates.CAD * rate * 98) / 100}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -74,13 +76,13 @@ const ExchangeRates = () => {
                 IDR
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.IDR * 102) / 100}
+                {exchangeRates && (exchangeRates.IDR * rate * 102) / 100}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && exchangeRates.IDR}
+                {exchangeRates && exchangeRates.IDR * rate}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.IDR * 98) / 100}
+                {exchangeRates && (exchangeRates.IDR * rate * 98) / 100}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -88,13 +90,13 @@ const ExchangeRates = () => {
                 JPY
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.JPY * 102) / 100}
+                {exchangeRates && (exchangeRates.JPY * rate * 102) / 100}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && exchangeRates.JPY}
+                {exchangeRates && exchangeRates.JPY * rate}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.JPY * 98) / 100}
+                {exchangeRates && (exchangeRates.JPY * rate * 98) / 100}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -102,13 +104,13 @@ const ExchangeRates = () => {
                 CHF
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.CHF * 102) / 100}
+                {exchangeRates && (exchangeRates.CHF * rate * 102) / 100}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && exchangeRates.CHF}
+                {exchangeRates && exchangeRates.CHF * rate}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.CHF * 98) / 100}
+                {exchangeRates && (exchangeRates.CHF * rate * 98) / 100}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -116,13 +118,13 @@ const ExchangeRates = () => {
                 EUR
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.EUR * 102) / 100}
+                {exchangeRates && (exchangeRates.EUR * rate * 102) / 100}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && exchangeRates.EUR}
+                {exchangeRates && exchangeRates.EUR * rate}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.EUR * 98) / 100}
+                {exchangeRates && (exchangeRates.EUR * rate * 98) / 100}
               </Table.Td>
             </Table.Tr>
             <Table.Tr>
@@ -130,13 +132,13 @@ const ExchangeRates = () => {
                 USD
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.USD * 102) / 100}
+                {exchangeRates && (exchangeRates.USD * rate * 102) / 100}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && exchangeRates.USD}
+                {exchangeRates && exchangeRates.USD * rate}
               </Table.Td>
               <Table.Td color="#fff" border="0">
-                {exchangeRates && (exchangeRates.USD * 98) / 100}
+                {exchangeRates && (exchangeRates.USD * rate * 98) / 100}
               </Table.Td>
             </Table.Tr>
           </Table.Tbody>
