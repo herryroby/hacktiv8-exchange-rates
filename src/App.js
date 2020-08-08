@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ColorModeProvider, CSSReset, ThemeProvider } from '@chakra-ui/core';
+import { createBrowserHistory } from 'history';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import ErrorBoundary from './components/atoms/ErrourBoundary';
+import ExchangeRates from './pages/ExchangeRates';
+import customTheme from './theme';
 
-function App() {
+const App = () => {
+  const [browserHistory] = useState(createBrowserHistory());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <ThemeProvider theme={customTheme}>
+        <CSSReset />
+        <ColorModeProvider>
+          <Router history={browserHistory}>
+            <Switch>
+              <Route path="/" component={ExchangeRates} exact />
+            </Switch>
+          </Router>
+        </ColorModeProvider>
+      </ThemeProvider>
+    </ErrorBoundary>
   );
-}
+};
 
 export default App;
