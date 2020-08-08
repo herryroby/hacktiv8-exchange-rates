@@ -1,7 +1,7 @@
 import { ColorModeProvider, CSSReset, ThemeProvider } from '@chakra-ui/core';
 import { createBrowserHistory } from 'history';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 import './App.css';
 import ErrorBoundary from './components/atoms/ErrourBoundary';
 import ExchangeRates from './pages/ExchangeRates';

@@ -83,6 +83,7 @@ const customColors = {
       heading: '#102a43',
       icon: '#9FB3C8',
       link: '#9F00FF',
+      borderBottomColor: '#ff846e',
     },
     dark: {
       logo: '#ffffff',
@@ -92,6 +93,7 @@ const customColors = {
       heading: '#fff',
       icon: '#486581',
       link: '#F8CCFF',
+      borderBottomColor: '#294158',
     },
   },
 };

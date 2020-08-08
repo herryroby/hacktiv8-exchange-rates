@@ -14,7 +14,7 @@ const Navigation = () => {
       backgroundColor={`mode.${colorMode}.background`}
     >
       <Link to="/">
-        <Icon name="Logo" color={`mode.${colorMode}.logo`} size={10} w={32} />
+        <Icon name="at-sign" color={`mode.${colorMode}.logo`} size={10} w={32} />
       </Link>
       <Stack isInline spacing={4} display={['block', 'block', 'none']}>
         <IconButton
